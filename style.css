@@ -294,22 +294,36 @@ top: -15vh;
 }
 
 .footerB{
-   padding: 35px 35vh;
-    height:30vh;
+    /* height:30vh; */
     width: 100%;
     display: flex;
     margin: auto;
     flex-direction: row;
+    justify-content: center;
+    padding: 30px 0px;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
-.btns{
+.btntext{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    /* flex-wrap: wrap; */
+
+}
+.btntext>p{
+    font-size: 2.8rem;
+    color: #727374;
+}
+.btnlinks{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    flex-wrap: wrap;
-
+    gap: 2rem;
 }
-.btns>button{
+
+.btnlinks>button{
     padding: 25px;
     background-color: #f4f4f4;
     width: 18vw;
@@ -319,48 +333,61 @@ top: -15vh;
     font-weight: 800;
     border: none;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); ;
-}
-.footerB>h2{
-    font-size: 2.3rem;
+} 
+.btnlinks>a{
+    font-size: 2.5rem;
+    color: #8c1515;
     text-align: center;
-  
+    font-weight: 900;
 }
-.footBT{
+.footer{
     width: 100%;
-    height: 20vh;
-    color: #0d2935;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3rem;
+    background-color: #f4f4f4;
     justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-}
-.footBT>p{
-    font-size: 3rem;
-}
-/* .footer{
-    margin: auto;
-    display: flex;
-    /* flex-wrap: wrap; */
-    /* gap: 3rem;
-    background-color: pink;
-    z-index: 1;
-    width: 90%;
-    justify-content: center; */
-
-/* }
-.footlinks{
-height: 40vh;
-width: 25vw;
-background-color: red;
-flex: 1;
-} */ 
-.footerB{
-    background-color: red;
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    
    }
+   .footlinks{
+    height: 45vh;
+    width: 20vw;
+    padding: 20px;
+   }
+   .footlinks>li{
+    padding: 10px;
+    list-style: none;
+   }
+   .footlinks>li>a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #8c1515;
+    font-weight: 600;
+
+   }
+   .footlinks>li>a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+   }
+   .footlinks>li>i{
+    font-size: 2.5rem;
+    color: #8c1515;
+    transition: .2s ease;
+   }
+   .footlinks>p{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #727374;
+   }
+   .footlinks>li>i:hover{
+padding-left: 4px;
+cursor: pointer;
+   }
+
+
+
+
 
 
 
@@ -369,41 +396,32 @@ flex: 1;
 
 /* MEDIA QUERIES */
 @media (max-width:800px) {
-    .footerlinks{
-        flex-direction: column;
-    }
-    .footer{
-        position: relative;
-        top: -40vh;
-    }
+   
+    
    .footerB{
     flex-wrap: wrap;
    justify-content: center;
    align-items: center;
    width: 90%;
-   padding: 0px 20px;
-   /* 22 */
+   padding: 20px 10px;
    margin: auto;
    gap: 2rem;
    }
-   .btns{
+   .btntext{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    width: 80%;
    }
-   
+   .btntext>{
+    font-size: 2.5rem;
+    text-align: center;
+    
+   }
    .btnlinks>button{
     width: 40vh;
+    padding: 20px;
    }
-   .footBT{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px 30px;
-    width: 100%;
-
-
-   }
+   
     .explore{
        margin-top: 20px;
         }
@@ -506,15 +524,27 @@ transition: .2s  ease-in-out;
         width: 75vw;
     }
 
-    .footerB {
-        position: absolute;
-        top: 150vh;
-}}
+   
+}
 
 
 
 /* media query 450px */
 @media (max-width:480px) {
+    .footer{
+        flex-direction: column;
+        margin: auto;
+    }
+    .footlinks{
+        width: 90%;
+        margin: auto;
+    }
+    .footlinks>p{
+        font-size: 1.6rem;
+    }
+    .footlinks>li>a{
+        font-size: 1.8rem;
+    }
     .mypic>img{
         top: -20vh;
     }
@@ -767,22 +797,27 @@ transition: .2s  ease-in-out;
 @media (min-width:1546px) and (max-width:2100px){
 
 .facRes{
-    width: 70%;
-
+    width: 100%;
     padding-top: 40px;
-    height: 130vh;
+    height: 75vh;
+    
 }
 .fac,.Res{
-    height: 60vh;
+    height: 50vh;
+    width: 35vh;
 }
 .fac>p,.Res>p{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 .graduatText>div>p{
     font-size: 2.5rem;
 }
 .gradImg{
     height: 85vh;
+}
+.mypic>img{
+    position: relative;
+    top: -12vh;
 }
 .mytext>p{
     font-size: 2.5rem;
