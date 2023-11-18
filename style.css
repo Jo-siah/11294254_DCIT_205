@@ -331,26 +331,28 @@ top: -15vh;
     color: #0d2935;
     justify-content: center;
     display: flex;
-    flex-wrap: wrapa;
+    flex-wrap: wrap;
 }
 .footBT>p{
     font-size: 3rem;
 }
-.footer{
+/* .footer{
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
+    /* flex-wrap: wrap; */
+    /* gap: 3rem;
     background-color: pink;
     z-index: 1;
     width: 90%;
-    justify-content: center;
-}
+    justify-content: center; */
+
+/* }
 .footlinks{
 height: 40vh;
 width: 25vw;
 background-color: red;
-}
+flex: 1;
+} */ 
 
 
 
@@ -360,13 +362,20 @@ background-color: red;
 
 /* MEDIA QUERIES */
 @media (max-width:800px) {
+    .footerlinks{
+        flex-direction: column;
+    }
+    .footer{
+        position: relative;
+        top: -40vh;
+    }
    .footerB{
     flex-wrap: wrap;
    justify-content: center;
    align-items: center;
    width: 90%;
    padding: 0px 20px;
-   /* height: 70vh; */
+   /* 22 */
    margin: auto;
    gap: 2rem;
    }
@@ -388,8 +397,7 @@ background-color: red;
 
    }
     .explore{
-        position: relative;
-        top: 150vh;
+       margin-top: 20px;
         }
     nav ul {
         background-color: rgba(0, 0, 0, 0.7);
@@ -473,16 +481,16 @@ transition: .2s  ease-in-out;
         height: 30vh;
      }
      .facRes{
-        height: 100vh;
+        height: 240vh;
      }
      .fac>p>strong, .Res>p>Strong{
         font-size: 2rem;
     }
     .fac>p, .Res>p{
-        font-size: 1.4rem;
+        font-size: 2.5rem;
     }
     .gateway{
-        height: 100vh;
+        height: 45vh;
         padding: 15px;
 }   
     .fac,.Res{
@@ -499,17 +507,25 @@ transition: .2s  ease-in-out;
 
 /* media query 450px */
 @media (max-width:450px) {
-   
+    .mypic>img{
+        top: -20vh;
+    }
+    .facRes{
+        height: 250vh;
+    }
 
     .fac>p>strong, .Res>p>Strong{
         font-size: 2rem;
     }
     .fac>p, .Res>p{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     .gateway{
         height: 100vh;
         padding: 15px;
+    }
+    .gateway>p{
+        color: #0d2935;
     }
     #message-container{
         height: 60px;
@@ -526,6 +542,7 @@ transition: .2s  ease-in-out;
         flex-wrap: wrap;
         flex-direction: column;
         font-size: 1.5rem;
+        height: 60vh;
         }
         .afterM>h2{
              font-size: 1.5rem;   
@@ -590,17 +607,44 @@ transition: .2s  ease-in-out;
             display: none;
         }
     }
-    @media(width:900 )and( width:800) {
-        .mypic>img{
-            position: relative;
-            top: -7vh
+    
+    @media(min-width:1240px){
+        .facRes{
+            height: 110vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
         }
-
-    }
-    @media(max-width:1240px){
-
+        .fac,.Res{
+            height: 50vh;
+            width: 38vh;
+        }
+        .fac>p,.Res>p{
+            font-size: 1.5rem;
+        }
+        .gradImg{
+            height: 50vh;
+        }
+        .gateway{
+            width: 90%;
+            padding: 0px 20px;
+            height: 30vh;
+        }
+    
         .graduatText{
-            height: 60vh;
+            height: 33vh;
+           
+        }
+        .graduatText>div>p{
+            font-size: 2rem;
+        }
+        .graduatText>div>h2{
+            font-size: 3rem;
+        }
+        .mytext>p{
+            font-size: 1.5rem;
         }
         .mypic{
             width: 206px;
@@ -609,7 +653,7 @@ transition: .2s  ease-in-out;
         .mypic>img{
             top: -12vh;
         }
-        nav ul {
+        /* nav ul {
             background-color: rgba(0, 0, 0, 0.7);
             display: none;
            width: 30vw;
@@ -634,7 +678,7 @@ transition: .2s  ease-in-out;
             position: absolute;
             top: 30px;
             right:90px;
-        }
+        } */
 
         .spotlight{
             flex-wrap: wrap;
@@ -642,5 +686,90 @@ transition: .2s  ease-in-out;
 
 
     }
+@media  (min-width:801px) and (max-width:1239px){
+    nav ul {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+       width: 30vw;
+       position: relative;
+        top: 9.2rem;
+       height: 40vh;
+       right: 40px;
+    }
+    nav ul li{
+        width: 40vw;
 
+    }
+    nav{
+        flex-wrap: nowrap;
+    }
+    .showList{
+        display: block;
+    }
+
+    box-icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right:90px;
+    }
+    .facRes{
+        width: 80%;
+         height: 265vh;
+    }
+    .gradImg{
+        height: 50vh;
+        
+    }
+    .mypic{
+       width: 35vw;
+    }
+    .mypic>img{
+        position: relative;
+        top: -17vh;
+    }
+    .graduatText>div>p{
+        font-size: 2rem;
+    }
+    .graduatText{
+        height: 40vh;
+    }
+    .gradImg{
+        height: 65vh;
+    }
+    .gateway{
+        height: 30vh;
+        padding: 20px;
+    }
+    
+    .fac,.Res{
+        height: 60vh;
+        width: 50vh;
+       
+    }
+    .fac>p,.Res>p{
+        font-size: 3rem;
+    }
+}
+@media (min-width:1546px) and (max-width:2000px){
+
+.facRes{
+    width: 100%;
+
+    padding-top: 40px;
+    /* height: 60vh; */
+}
+.fac>p,.Res>p{
+    font-size: 2.5rem;
+}
+.graduatText>div>p{
+    font-size: 2.5rem;
+}
+.gradImg{
+    height: 100vh;
+}
+.mytext>p{
+    font-size: 2.5rem;
+}
+}
     
