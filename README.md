@@ -1,1 +1,2 @@
-# DCIT_205_IA
+# 11294254_DCIT205
+The repo comprises files that are integrated to build a 10-page site for the Cs-dpt....
