@@ -353,7 +353,14 @@ width: 25vw;
 background-color: red;
 flex: 1;
 } */ 
-
+.footerB{
+    background-color: red;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    
+   }
 
 
 
@@ -384,7 +391,8 @@ flex: 1;
     justify-content: center;
     flex-wrap: wrap;
    }
-   .btns>button{
+   
+   .btnlinks>button{
     width: 40vh;
    }
    .footBT{
@@ -506,7 +514,7 @@ transition: .2s  ease-in-out;
 
 
 /* media query 450px */
-@media (max-width:450px) {
+@media (max-width:480px) {
     .mypic>img{
         top: -20vh;
     }
@@ -654,7 +662,7 @@ transition: .2s  ease-in-out;
             height: 210px;
         }
         .mypic>img{
-            top: -12vh;
+            top: -8vh;
         }
         /* nav ul {
             background-color: rgba(0, 0, 0, 0.7);
@@ -718,7 +726,7 @@ transition: .2s  ease-in-out;
     }
     .facRes{
         width: 80%;
-         height: 265vh;
+         height: 20vh;
     }
     .gradImg{
         height: 50vh;
@@ -754,13 +762,16 @@ transition: .2s  ease-in-out;
         font-size: 3rem;
     }
 }
-@media (min-width:1546px) and (max-width:2000px){
+@media (min-width:1546px) and (max-width:2100px){
 
 .facRes{
-    width: 100%;
+    width: 70%;
 
     padding-top: 40px;
-    /* height: 60vh; */
+    height: 130vh;
+}
+.fac,.Res{
+    height: 60vh;
 }
 .fac>p,.Res>p{
     font-size: 2.5rem;
@@ -769,7 +780,7 @@ transition: .2s  ease-in-out;
     font-size: 2.5rem;
 }
 .gradImg{
-    height: 100vh;
+    height: 85vh;
 }
 .mytext>p{
     font-size: 2.5rem;
