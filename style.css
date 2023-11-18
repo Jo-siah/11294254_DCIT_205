@@ -546,7 +546,7 @@ transition: .2s  ease-in-out;
         font-size: 1.8rem;
     }
     .mypic>img{
-        top: -20vh;
+        top: -15vh;
     }
     .facRes{
         height: 250vh;
@@ -560,7 +560,7 @@ transition: .2s  ease-in-out;
         font-size: 1.6rem;
     }
     .gateway{
-        height: 100vh;
+        height: 105vh;
         padding: 15px;
     }
     .gateway>p{
@@ -593,18 +593,22 @@ transition: .2s  ease-in-out;
         z-index: 1000;
         }
         nav ul {
-            width: 50vw;
+            width: 40vw;
+            position: relative;
+            top: 25vh;
+            left: 9vw;
+             
         }
         nav ul li{
             height: 60px;
-            text-align: left;
+            text-align: center;
             padding-top: 0;
             width: 21vw;
         }
         nav ul li a{
             padding: none;
             font-size: 1.2rem;
-            text-align: left;
+           
         }
         .Cs-logo{
             
@@ -696,6 +700,16 @@ transition: .2s  ease-in-out;
         .mypic>img{
             top: -24vh;
         }
+        .btnlinks>button{
+            width: 50vw;
+            
+        }
+        .footer{
+            height: 120vh;
+        }
+        .footlinks{
+            width: 30%;
+        }
         /* nav ul {
             background-color: rgba(0, 0, 0, 0.7);
             display: none;
@@ -726,6 +740,7 @@ transition: .2s  ease-in-out;
         .spotlight{
             flex-wrap: wrap;
         }
+
 
 
     }
