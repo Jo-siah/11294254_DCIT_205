@@ -425,14 +425,7 @@ cursor: pointer;
 .accessLinks>.icons>i:hover{
     cursor: pointer;
 }
-.toup{
-    font-size: 3rem;
-     color:black;
-     padding: 10px; 
-      position: relative; 
-      left: 90vw; 
-      position: fixed;
-}
+
 #back-to-top-btn {
     display: none;
     position: fixed;
@@ -452,7 +445,13 @@ cursor: pointer;
     background-color: #2980b9;
 }
 
-
+.icons{
+    display: flex;
+    /* gap: 2rem; */
+    font-size: 3rem;
+    flex-direction: row;
+    
+}
 
 
 
@@ -599,13 +598,21 @@ transition: .2s  ease-in-out;
 /* media query 450px */
 @media (max-width:480px) {
     .mainFoot{
-        height: 70vh;
+        height: 85vh;
         width: 100%;
         flex-direction: column  ;
+        justify-content: center;
+        padding-left: 20px;
 
     }
     .icons{
-       display: none;
+       display: block;
+       
+       display: flex; 
+        justify-content: center;
+    }
+    .icons>i{
+        font-size: 1rem;
     }
     .footLogo{
         width: 90%;

@@ -1,5 +1,6 @@
 document.querySelector('#menu').addEventListener('click',()=>{
     document.querySelector('nav ul').classList.toggle('showList')
+    
 })
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -28,3 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
         document.documentElement.scrollTop = 0;
     });
 });
+
+window.addEventListener('click' , function(){
+   if( document.querySelector('nav ul').classList.toggle('showList') ) {
+    document.getElementById("nav ul").style.display = "block";
+   }
+})
