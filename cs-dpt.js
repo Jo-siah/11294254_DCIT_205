@@ -1,5 +1,5 @@
 document.querySelector('#menu').addEventListener('click',()=>{
-    document.querySelector('nav ul').classList.toggle('showList')
+    document.querySelector('ul').classList.toggle('showList')
     
 })
 
@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-window.addEventListener('click' , function(){
-   if( document.querySelector('nav ul').classList.toggle('showList') ) {
-    document.getElementById("nav ul").style.display = "block";
-   }
-})
+// window.addEventListener('click' , function(){
+//    if( document.querySelector('nav ul').classList.toggle('showList') ) {
+//     document.getElementById("nav ul").style.display = "block";
+//    }
+// })

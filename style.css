@@ -490,7 +490,7 @@ cursor: pointer;
         }
     nav ul {
         background-color: rgba(0, 0, 0, 0.7);
-        display: none;
+        display: block;
        width: 30vw;
        position: relative;
         left: 50vw;
@@ -515,9 +515,6 @@ cursor: pointer;
         right: 0px !important;
         
     }
-
-   
-
     nav ul li {
         display: block;
         padding:  0;
@@ -597,6 +594,30 @@ transition: .2s  ease-in-out;
 
 /* media query 450px */
 @media (max-width:480px) {
+
+    nav ul {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+       width: 30vw;
+       position: relative;
+        left: 50vw;
+        height:75vh;
+       margin-top: -75px !important;
+       
+    }
+    
+    .showList{
+        display: block;
+    }
+    box-icon {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 15px !important;
+        
+    }
+
+
     .mainFoot{
         height: 85vh;
         width: 100%;
