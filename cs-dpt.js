@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         document.getElementById("message-container").style.display = "block";
     }, 2000);
-
-   
 });
 
 
