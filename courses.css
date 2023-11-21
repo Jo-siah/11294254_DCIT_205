@@ -250,7 +250,7 @@ text-decoration: underline;
 
 @media(max-width:400px){
     .imgCs{
-        height: 38vh;
+        height: 28vh;
     }
 .courses{
     width: 100%;
@@ -297,11 +297,7 @@ box-icon{
     height: 50px;
     width: 46%;
 }
-.shortCourses{
-    flex-direction: column;
-    width: 100%;
-    height: 245vh;
-}
+
 p{
     font-size: 0.3rem;}
 
@@ -309,13 +305,14 @@ p{
         font-size: 1.3rem;
     }
 
-    .MBdev, .cCNa,.Programming,.Infosec{
+    /* .MBdev, .cCNa,.Programming,.Infosec{
         width: 100%;
         display: flex;
         flex-direction: column;
         height: 50vh;
+        width: 40vw;
         
-    }
+    } */
     .description>h2{
         font-size: 1.3rem;
 
@@ -324,7 +321,23 @@ p{
         font-size: 0.9rem;
     }
     .shortCourses{
-        height: 245vh;
+        border: 1px silver solid;
+        width: 100%;
+        overflow-x:scroll;
+        white-space: wrap;
+        background-color:#f4f4f4;
+    }
+
+
+    .shortCourses::-webkit-scrollbar {
+        display: none;
+    }
+    .MBdev, .cCNa,.Programming,.Infosec{
+        display: inline-block;
+            min-width: 60vw; 
+    }
+    .MBdev>img, .cCNa>img,.Programming>img,.Infosec>img{
+        border-radius: 15px;
     }
     .footer{
         display: flex;
@@ -357,11 +370,15 @@ p{
         border: none;
     }
     .left>button{
-        top:65.7vh;
-        padding: 16px;
+        top: 72.4vh;
+        padding: 15.9px;
         font-size: 1.2rem;
         width: 70px;
-        left: 55vw;
+        left: 60vw;
+    }
+    .cRsImage {
+        height: 45%;
+    }
     }
     .up,.down{
         margin: auto;
@@ -371,6 +388,7 @@ p{
         flex-direction: column;
         gap: 2rem;
         justify-content: center;
+        padding-top: 90px;
         
     }
     .up>section>li>a{
@@ -382,8 +400,9 @@ p{
         justify-content: center;
         height: 120vh;
         gap: 2rem;
-        border-top: 2px silver solid;
-
+        border-top:1px silver solid;
+        padding-top: 5vh;
+        
     }
     .downleft,.downright{
         width: 100%;
@@ -398,7 +417,7 @@ p{
     .downleft>p, .downright>p{
         font-size: 1.2rem;
     }
-}
+
 @media (min-width:1000px) and (max-width:1500px){
     .shortCourses{
         height: 120vh;
