@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+
 // window.addEventListener('click' , function(){
 //    if( document.querySelector('nav ul').classList.toggle('showList') ) {
 //     document.getElementById("nav ul").style.display = "block";

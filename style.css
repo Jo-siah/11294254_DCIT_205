@@ -8,6 +8,7 @@
 }
 body{
     font-family: "Poppins", sans-serif ;
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -612,7 +613,7 @@ transition: .2s  ease-in-out;
         display: block;
         position: absolute;
         top: 24px;
-        right: 15px !important;
+        right: 30px !important;
         
     }
 
@@ -627,12 +628,13 @@ transition: .2s  ease-in-out;
     }
     .icons{
        display: block;
-       
+       padding-left: 5vw;
+       padding-top:20px ;
        display: flex; 
         justify-content: center;
     }
-    .icons>i{
-        font-size: 1rem;
+    .accessLinks>.icons>i{
+        font-size: 3rem;
     }
     .footLogo{
         width: 90%;
@@ -641,6 +643,9 @@ transition: .2s  ease-in-out;
     }
     .accessLinks{
         flex-direction: column;
+        height: 55vh;
+        justify-content: space-evenly;
+        padding-top: 20px;
     }
     .accessLinks>li{
         padding-top: 15px;
@@ -650,6 +655,7 @@ transition: .2s  ease-in-out;
     .accessLinks>li>a{
         text-align: center;
         padding-left: 20px;
+        font-size: 1.8rem;
     }
     .accessLinks>li>a:hover{
         text-decoration: underline;
@@ -664,7 +670,8 @@ transition: .2s  ease-in-out;
         margin: auto;
     }
     .footlinks>p{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+
     }
     .footlinks>li>a{
         font-size: 1.8rem;
@@ -673,10 +680,12 @@ transition: .2s  ease-in-out;
         top: -15vh;
     }
     .facRes{
-        height: 250vh;
+        height: 310vh;
 
     }
-
+    .fac,.Res{
+        height: 70vh;
+    }
     .fac>p>strong, .Res>p>Strong{
         font-size: 2rem;
     }
@@ -684,12 +693,17 @@ transition: .2s  ease-in-out;
         font-size: 1.6rem;
     }
     .gateway{
-        height: 105vh;
+        height: 115vh;
         padding: 15px;
     }
     .gateway>p{
         color: #0d2935;
     }
+    .gradImg{
+        height: 40vh;
+        padding: 20px;
+    }
+    
     #message-container{
         height: 60px;
         width: 100%;
@@ -705,7 +719,7 @@ transition: .2s  ease-in-out;
         flex-wrap: wrap;
         flex-direction: column;
         font-size: 1.5rem;
-        height: 70vh;
+        height: 87vh;
         }
         .afterM>h2{
              font-size: 1.5rem;   
@@ -719,7 +733,7 @@ transition: .2s  ease-in-out;
         nav ul {
             width: 40vw;
             position: relative;
-            top: 25vh;
+            top: 28vh;
             left: 9vw;
              
         }
@@ -774,7 +788,10 @@ transition: .2s  ease-in-out;
             display: none;
         }
     }
-    
+
+
+
+    /* 1240 screen size */
     @media(min-width:1240px){
         .mainFoot{
             width: 100%;
@@ -855,7 +872,7 @@ transition: .2s  ease-in-out;
         }
 
         .icons{
-            padding-left: 5vw;
+            padding-left: 6vw;
         }
 
     }
