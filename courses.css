@@ -321,7 +321,6 @@ p{
         font-size: 0.9rem;
     }
     .shortCourses{
-        border: 1px silver solid;
         width: 100%;
         overflow-x:scroll;
         white-space: wrap;
@@ -335,6 +334,7 @@ p{
     .MBdev, .cCNa,.Programming,.Infosec{
         display: inline-block;
             min-width: 60vw; 
+            height: 52vh;
     }
     .MBdev>img, .cCNa>img,.Programming>img,.Infosec>img{
         border-radius: 15px;
