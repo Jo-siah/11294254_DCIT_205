@@ -1,4 +1,9 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 li{
     list-style: none;
 }
@@ -32,7 +37,7 @@ nav{
 }
 nav{
     height: 100px;
-    background-color:#8c1515;
+    background-color:#2c2a58;
     padding: 0.8rem 8%;
     display: flex;
     justify-content: space-between;
@@ -41,6 +46,7 @@ nav{
 }
 nav ul{
 list-style: none;
+display: flex;
 }
 nav ul li{
     display: inline-block;
@@ -58,6 +64,9 @@ nav ul li a:hover{
     border-radius: 10px;
     color: #0d2935;
 
+}
+box-icon{
+    display: none;
 }
 .imgCs{
     width: 95%;
@@ -107,7 +116,7 @@ background-color: pink;
     width: 100vw;
     display: flex;
    gap: 2rem;
-    flex-wrap: wrap;
+    
     padding: 70px;
 }
 .MBdev, .cCNa,.Programming,.Infosec{
@@ -116,14 +125,14 @@ background-color: pink;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color:#f4f4f4;
     transition: .2s ease;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     border-radius: 20px;
 }
 .MBdev>img,.cCNa>img,.Programming>img,.Infosec>img{
     border-radius: 15px;
 }
 .description>h2{
-    color: #0a5167;
+    color: #2c2a58;
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
@@ -139,7 +148,7 @@ background-color: pink;
 }
 
 .footer{
-    background-color:#8c1515;
+    background-color:#2c2a58;
     width: 95%;
     height: 80vh;
     margin: auto;
@@ -186,7 +195,7 @@ button{
     padding-top: 20px;
 }
 .right{
-    background-color: #8c1515;
+    background-color: #2c2a58;
     display: flex;
     gap: 3rem;
     flex-direction: column;
@@ -239,7 +248,7 @@ text-decoration: underline;
 }
 
 
-@media(max-width:600px){
+@media(max-width:400px){
 .courses{
     width: 100%;
     background-color: green;
@@ -249,4 +258,168 @@ text-decoration: underline;
     width: 100%;
     flex-wrap: nowrap;
 }
+.showList{
+    display: block;
+}
+nav{
+    display: flex;
+    width: 100%;
+    position: relative;
+    
+}
+nav ul{
+    background-color: pink;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+   top: 15vh;
+   left: 48vw;
+   right: 20px;
+}
+nav ul li{
+    margin: 0;
+    padding: 0px 25px;
+    line-height: 10vh;
+}
+nav ul li a{
+    padding: 0;
+}
+.Cs-logo{
+    height: 50px;
+    width: 46%;
+}
+.shortCourses{
+    flex-direction: column;
+    width: 100%;
+
+}
+p{
+    font-size: 0.3rem;}
+
+    a{
+        font-size: 1.3rem;
+    }
+
+    .MBdev, .cCNa,.Programming,.Infosec{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        
+    }
+    .description>h2{
+        font-size: 1.3rem;
+
+    }
+    .description>p{
+        font-size: 0.9rem;
+    }
+    .shortCourses{
+        height: 300vh;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        /* gap: 3rem; */
+        /* flex-wrap: wrap; */
+        height:125vh;background-color: #2c2a58;
+        justify-content: center;
+    }
+    .left{
+      justify-content: center;
+        width: 100%;
+        text-align: center;
+        height: 130vh;
+        background-color: #2c2a58;
+    }
+    .left>li>a{
+        font-size: 0.9rem;
+    }
+    .left>input{
+        width: 60vw;
+        padding: 15px;
+        font-size: 1.2rem;
+        border: none;
+    }
+    .left>button{
+        top:65.7vh;
+        padding: 16px;
+        font-size: 1.2rem;
+        width: 70px;
+        left: 55vw;
+    }
+    .up,.down{
+        margin: auto;
+        text-align: center;
+    }
+    .up{
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        
+    }
+    .up>section>li>a{
+        font-size: 1.2rem;
+    }
+    .down{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 120vh;
+        gap: 2rem;
+    }
+    .downleft,.downright{
+        width: 100%;
+        gap: 0px;
+    }
+    .downleft>li{
+        font-size: 1.2rem;
+    }
+    .downright>h2 , .downleft>h2{
+        font-size: 1.5rem;
+    }
+    .downleft>p, .downright>p{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width:1200px) and (max-width:1500px){
+    .shortCourses{
+        height: 120vh;
+    }
+    .MBdev, .cCNa,.Programming,.Infosec{
+width: 60vw;
+height: 80vh;
+    }
+    .description>h2{
+        font-size: 1.5rem;
+    }
+    .footer{
+        height: 140vh;
+    }
+    .left>li>a{
+        font-size: 1.2rem;
+    }
+    .downleft>li{
+        font-size: 1.2rem;
+    }
+    .downright>h2 , .downleft>h2{
+        font-size: 1.5rem;
+    }
+    .downleft>p, .downright>p{
+        font-size: 1.2rem;
+    }
+    .up>section>li>a{
+        font-size: 1.2rem;
+
+    }
+    .left>button{
+        top: 85.6vh;
+        padding: 16.9px;
+    }
 }
