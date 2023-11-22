@@ -126,7 +126,7 @@ box-icon{
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     font-size: 1.5rem;
-    color: white;
+    color: #e6db5a  ;
     width: 80%;
     
     border-radius: 10px;
@@ -281,7 +281,7 @@ top: -15vh;
 
 }
 .explore>a{
-    color: white;
+    color: #e6db5a;
     text-decoration: none;
     font-size: 1.9rem;
     transition: .6s ease;
@@ -413,7 +413,7 @@ cursor: pointer;
 }
 .accessLinks>li>a{
     text-decoration: none;
-    color: #f4f4f4;
+    color: #e6db5a;
     font-size: 2rem;
     padding: 0px 15px;
 }
