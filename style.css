@@ -1,24 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-}
-body{
-    font-family: "Poppins", sans-serif ;
-    
+    font-family: Source Sans\ 3,Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 a{
     text-decoration: none;
     font-weight:400 ;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 
 }
 h1 {
     font-weight: 800;
-    font-size: 3.6rem;
+    font-size: 2.6rem;
 }
 
 h2 {
@@ -93,7 +89,7 @@ nav ul li a{
 nav ul li a:hover{
     text-shadow: 5px 5px 30px white;
     border-radius: 10px;
-    color: #0d2935;
+    color: #e6db5a;
 
 }
 
@@ -154,8 +150,8 @@ box-icon{
     color: #727374;
 }
 .mypic{
-    height: 180px;
-    width: 180px;
+    height: 160px;
+    width: 160px;
     background-color: rgb(45, 43, 43);
     border-radius: 50%;
     position: relative; 
@@ -195,7 +191,7 @@ top: -15vh;
 }
 .gradImg{
     width: 90%;
-    height:90vh;
+    height:60vh;
     flex: 1;
     margin: auto;
     padding: 20px;
@@ -229,8 +225,8 @@ top: -15vh;
 
 }
 .gateway>p{
-    font-size: 2.3rem;
-   
+    font-size: 1.8rem;
+    color: #595a5b;
 }
 .facRes{
     height: 55vh;
@@ -244,11 +240,12 @@ top: -15vh;
 
 }
 .fac,.Res{
-    height: 50vh;
-    width: 40vh;
+    height: 40vh;
+    width: 40vw;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 .fac>img, .Res>img{
     border-radius: 10px 10px 0px 0px;
@@ -256,13 +253,15 @@ top: -15vh;
 .fac>p, .Res>p{
     color: #727374;
     font-size: 2rem;
-    padding: 10px;
+    padding: 15px;
 }
 .fac>p>strong , .Res>p>strong{
     color: #2c2a58;
-    font-size:3rem ;
+    font-size:2.5rem ;
     transition: .2s ease-in
     ;
+    font-weight: 700;
+    padding-bottom: 20px;
 }
 .fac>p>strong:hover , .Res>p>strong:hover{
     padding-left: 5px;
@@ -299,7 +298,7 @@ top: -15vh;
     margin: auto;
     flex-direction: row;
     justify-content: center;
-    padding: 30px 0px;
+    padding: 10px 0px;
     gap: 3rem;
     flex-wrap: wrap;
 }
@@ -308,7 +307,9 @@ top: -15vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: center;
+    height: 100%;
+    align-items: center;
     /* flex-wrap: wrap; */
 
 }
@@ -320,6 +321,7 @@ top: -15vh;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    justify-content: center;
 }
 
 .btnlinks>button{
@@ -361,7 +363,7 @@ top: -15vh;
    }
    .footlinks>li>a{
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #2c2a58;
     font-weight: 600;
 
@@ -388,7 +390,6 @@ cursor: pointer;
    .mainFoot{
     background-color: #2c2a58;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     padding: 20px;
     margin: auto;
@@ -396,17 +397,16 @@ cursor: pointer;
     position: absolute;
    }
 .footLogo{
-    height: 15vh;
-    width: 25vw;
+    height: 10vh;
+    width: 20vw;
     display: flex;
     justify-content: center;
 }
 .accessLinks{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    width: 70%;
+    width: 90%;
 }
 .accessLinks>li{
     list-style: none;
@@ -414,13 +414,16 @@ cursor: pointer;
 .accessLinks>li>a{
     text-decoration: none;
     color: #e6db5a;
-    font-size: 2rem;
-    padding: 0px 15px;
+    font-size: 1.6rem;
+    gap: 3rem;
+}
+.accessLinks>li>a:hover{
+    text-decoration: underline;
 }
 .accessLinks>.icons>i{
-    font-size: 5rem;
+    font-size: 3rem;
     color: white;
-    padding-left: 5rem;
+    padding-left: 3rem;
 }
 .accessLinks>.icons>i:hover{
     cursor: pointer;
@@ -447,8 +450,6 @@ cursor: pointer;
 
 .icons{
     display: flex;
-    /* gap: 2rem; */
-    font-size: 3rem;
     flex-direction: row;
     
 }
@@ -576,7 +577,7 @@ transition: .2s  ease-in-out;
         font-size: 2.5rem;
     }
     .gateway{
-        height: 45vh;
+        height: 60vh;
         padding: 15px;
 }   
     .fac,.Res{
@@ -598,7 +599,7 @@ transition: .2s  ease-in-out;
     nav ul {
         background-color: rgba(0, 0, 0, 0.7);
         display: none;
-       width: 30vw;
+       width: 100vw;
        position: relative;
         left: 50vw;
         height:75vh;
@@ -802,7 +803,7 @@ transition: .2s  ease-in-out;
         }
         
         .facRes{
-            height: 110vh;
+            height: 85vh;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -810,7 +811,7 @@ transition: .2s  ease-in-out;
             
         }
         .fac,.Res{
-            height: 68vh;
+            height: 60vh;
             width: 21vw;
         }
         .fac>p,.Res>p{
@@ -905,7 +906,7 @@ transition: .2s  ease-in-out;
     }
     .facRes{
         width: 80%;
-         height: 20vh;
+         height: 150vh;
     }
     .gradImg{
         height: 50vh;
@@ -928,17 +929,24 @@ transition: .2s  ease-in-out;
         height: 65vh;
     }
     .gateway{
-        height: 30vh;
+        height: 45vh;
         padding: 20px;
     }
     
     .fac,.Res{
-        height: 60vh;
-        width: 50vh;
+        height: 65vh;
+        width: 45vh;
        
     }
     .fac>p,.Res>p{
-        font-size: 3rem;
+        font-size: 1.8rem;
+    }
+    .btntext>p{
+        font: 1.5rem;
+    }
+    .btnlinks>button{
+        font-size: 1.5rem;
+        width: 40vw;
     }
 }
 @media (min-width:1546px) and (max-width:2100px){
@@ -951,7 +959,7 @@ transition: .2s  ease-in-out;
 }
 .fac,.Res{
     height: 50vh;
-    width: 35vh;
+    width: 35vw;
 }
 .fac>p,.Res>p{
     font-size: 1.8rem;
