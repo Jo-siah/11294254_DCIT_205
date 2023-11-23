@@ -596,16 +596,6 @@ transition: .2s  ease-in-out;
 /* media query 450px */
 @media (max-width:480px) {
 
-    nav ul {
-        background-color: rgba(0, 0, 0, 0.7);
-        display: none;
-       width: 100vw;
-       position: relative;
-        left: 50vw;
-        height:75vh;
-       margin-top: -75px !important;
-       
-    }
     
     .showList{
         display: block;
@@ -685,7 +675,7 @@ transition: .2s  ease-in-out;
 
     }
     .fac,.Res{
-        height: 70vh;
+        height: 60vh;
     }
     .fac>p>strong, .Res>p>Strong{
         font-size: 2rem;
@@ -694,7 +684,7 @@ transition: .2s  ease-in-out;
         font-size: 1.6rem;
     }
     .gateway{
-        height: 115vh;
+        height: 70vh;
         padding: 15px;
     }
     .gateway>p{
@@ -732,17 +722,22 @@ transition: .2s  ease-in-out;
         z-index: 1000;
         }
         nav ul {
-            width: 40vw;
-            position: relative;
-            top: 28vh;
-            left: 9vw;
-             
+            background-color: rgba(0, 0, 0, 0.9);
+            display: none;
+           width: 101vw;
+           position: absolute;
+            left: 0vw;
+            top: 26vh;
+           margin-top: -75px !important;
+           right: 70px;
+           padding: 20px;
+             height: 55vh;
         }
         nav ul li{
-            height: 60px;
-            text-align: center;
-            padding-top: 0;
-            width: 21vw;
+            height: 55px;
+            
+            width: 100%;
+            border-bottom: 1px solid whitesmoke;
         }
         nav ul li a{
             padding: none;
@@ -762,6 +757,12 @@ transition: .2s  ease-in-out;
         .spotlight{
             width: 100%;
             flex-wrap: wrap;
+        }
+        .btntext>p{
+            font-size: 1.8rem;
+        }
+        .footlinks>li>i{
+            font-size: 1.2rem;
         }
     }
    
