@@ -879,9 +879,9 @@ transition: .2s  ease-in-out;
 
     }
 @media  (min-width:801px) and (max-width:1239px){
-    nav ul {
+    /* nav ul {
         background-color: rgba(0, 0, 0, 0.7);
-        display: none;
+        display: block;
        width: 30vw;
        position: relative;
         top: 9.2rem;
@@ -897,10 +897,10 @@ transition: .2s  ease-in-out;
     }
     .showList{
         display: block;
-    }
+    } */
 
     box-icon {
-        display: block;
+        display: none;
         position: absolute;
         top: 30px;
         right:90px;
@@ -933,14 +933,17 @@ transition: .2s  ease-in-out;
         height: 45vh;
         padding: 20px;
     }
-    
+    .facRes{
+        width: 60vw;
+        height: 160vh;
+    }
     .fac,.Res{
-        height: 65vh;
-        width: 45vh;
+        height:70vh;
+        width: 50vh;
        
     }
     .fac>p,.Res>p{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .btntext>p{
         font: 1.5rem;

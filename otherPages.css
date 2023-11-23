@@ -10,6 +10,7 @@ body{
 }
 a{
     text-decoration: none;
+    
 }
 /* p{
     font-size: 1.8rem;
@@ -136,7 +137,12 @@ button{
     color: white;
     font-weight: 600;
     border: none;
+
+}button>a{
+    text-decoration: none;
+    color: white;
 }
+
 .input {
     width: 20vw;
     padding: 10px;

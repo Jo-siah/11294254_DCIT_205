@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>email awaiting</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(12, 12, 47);
+            height: 100vh;
+            flex-direction: column;
+            color: white;
+            font-family: Source Sans\ 3,Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+        .container{
+            height:50vh ;
+            width: 40vh;
+            /* background-color:rgb(177, 177, 237); */
+            border-radius: 10px;
+            border: 3px dashed rgb(177, 177, 237);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 5rem;
+           
+            animation: spin 10s linear infinite;
+        }
+        .container>i{
+            font-size: 10rem;
+            color: rgb(84, 84, 227);
+            
+        }
+        .container>h2{
+            color: white;
+            font-weight: 800;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>We'll hit you up!!</h2>
+        <i class="fa-solid fa-envelopes-bulk fa-bounce"></i>
+       
+    </div>
+    <p>constantly check your email</p>
+    <script src="https://kit.fontawesome.com/32e015af14.js" crossorigin="anonymous"></script>
+</body>
+</html>
