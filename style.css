@@ -43,7 +43,7 @@ img {
 }
 .main{
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('circuit.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('/MEDIA/circuit.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -63,7 +63,8 @@ img {
 
 nav{
     top: 0;
-    position: fixed; scroll-behavior: smooth;
+    position: fixed; 
+    scroll-behavior: smooth;
     z-index: 1000;
 }
 nav{
@@ -301,6 +302,7 @@ top: -15vh;
     padding: 10px 0px;
     gap: 3rem;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .btntext{
@@ -314,8 +316,9 @@ top: -15vh;
 
 }
 .btntext>p{
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     color: #727374;
+    text-align: center;
 }
 .btnlinks{
     display: flex;
