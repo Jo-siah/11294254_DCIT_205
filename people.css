@@ -147,6 +147,9 @@ list-style: none;
 .showList{
 display: none;
 }
+.showStaff{
+    display: none;
+}
 .borderState{
     border: none;
 }
@@ -433,6 +436,12 @@ display: none;
         .showList{
             display: block;
         }
+        .showStaff{
+            display: none;
+        }
+            .borderState{
+                border: none;
+            }
         box-icon {
             display: block;
             position: absolute;
