@@ -43,7 +43,7 @@ img {
 }
 .main{
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('/MEDIA/circuit.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('MEDIA/circuit.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -86,11 +86,12 @@ nav ul li{
 nav ul li a{
     color: white;
     transition: .2s ease-in;
+    padding-bottom: 5px;
 }
 nav ul li a:hover{
-    text-shadow: 5px 5px 30px white;
-    border-radius: 10px;
-    color: #e6db5a;
+   
+    border-bottom: 2px solid #b01212;
+
 
 }
 
@@ -658,10 +659,16 @@ transition: .2s  ease-in-out;
     .footer{
         flex-direction: column;
         margin: auto;
+        justify-content: center;
+        align-items: center;
     }
     .footlinks{
+        display: flex;
         width: 90%;
         margin: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .footlinks>p{
         font-size: 1.8rem;

@@ -11,7 +11,7 @@ li{
 a{
     text-decoration: none;
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 p{
     font-size: 1.8rem;
@@ -55,9 +55,9 @@ nav ul li{
     margin-left: 3rem;
 }
 nav ul li a{
-    color: #e6db5a;
+    color: white;
     transition: .2s ease-in;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-decoration: none;
 }
 nav ul li a:hover{
@@ -219,7 +219,7 @@ button{
 }
 .up>section>li>a{
     transition: .2s ease;
-    font-size: 1.9rem;
+    font-size: 1rem;
 }
 .up>section>li>a:hover{
 color: rgb(143, 143, 143);
@@ -234,18 +234,21 @@ text-decoration: underline;
 }
 .downleft>h2 , .downright>h2{
     color: #e6db5a;
-    font-weight: 800;
-    font-size: 2rem;
-
+    font-weight: 400;
+}
+.downleft>p , .downright>p{
+    font-size: 1.2rem;
+    color: white;
 }
 .downleft{
     display: flex;
     gap: 2rem;
     flex-direction: column;
 }
+
 .downleft>li{
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 
 

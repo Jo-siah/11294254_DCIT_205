@@ -51,7 +51,7 @@ nav ul li{
 nav ul li a{
     color: white;
     transition: .2s ease-in;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 nav ul li a:hover{
     text-shadow: 5px 5px 30px white;
@@ -74,7 +74,7 @@ box-icon{
     
 }
 .welcomeImg{
-    background-image: url('/MEDIA/freshers-page_2018.jpg');
+    background-image: url('MEDIA/freshers-page_2018.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -244,7 +244,7 @@ font-weight: 700;
     cursor: pointer;
    }
    .footlinks>li>i{
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     color: #2c2a58;
     transition: .2s ease;
    }
