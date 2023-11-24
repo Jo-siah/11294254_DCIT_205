@@ -52,12 +52,12 @@ display: flex;
 nav ul li{
     display: inline-block;
     line-height: 100px;
-    margin-left: 6rem;
+    margin-left: 3rem;
 }
 nav ul li a{
     color: #e6db5a;
     transition: .2s ease-in;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 nav ul li a:hover{
@@ -435,11 +435,14 @@ p{
         height: 120vh;
     }
     .MBdev, .cCNa,.Programming,.Infosec{
-width: 60vw;
-height: 80vh;
+width: 65vw;
+height: 65vh;
     }
     .description>h2{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+    }
+    .description>p{
+        font-size: 1rem;
     }
     .footer{
         height: 140vh;

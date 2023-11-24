@@ -15,7 +15,7 @@
             <li><a href="">About</a></li>
             <li><a href="">Courses</a></li>
             <li><a href="Opportunities.html">Opportunities</a></li>
-            <li><a href="">Help</a></li>
+            <li><a href="people.html">People</a></li>
         </ul>
 
         <box-icon name='menu' color="whitesmoke" size="lg" id="menu"></box-icon>
@@ -46,6 +46,7 @@
         </div>
 
         <div class="staff">
+            <i class="fa fa-angles-down"></i>
            <div class="staffImg"><img src="/MEDIA/navah_spotlightphoto_0_1.png" alt="">
             <p><strong>Sara Achour</strong>
                 Assistant Professor of Computer Science and of Electrical Engineering</p>
@@ -65,7 +66,7 @@
             <p>Assistant Professor of Computer Science</p>
            </div>
            <div class="staffImg"><img src="/MEDIA/staff.png" alt="">
-            <p><strong>Jay Borenstein</strong>
+            <p><strong>Mark Attah Mensah    </strong>
                 Lecturer</p>
            </div>
            <div class="staffImg"><img src="/MEDIA/staff.png" alt="">
@@ -89,10 +90,11 @@
                 Professor of Computer Science   </p>
            </div>
            <div class="staffImg"><img src="/MEDIA/staff.png" alt="">
-            <p>Associate Professor of Computer Science</p>
+            <p><strong>Jay Borenstein</strong>Associate Professor of Computer Science</p>
            </div>
           
         </div>
+       
         </div>
     </section>
 
@@ -163,11 +165,17 @@
        </div>
 
     <script >
+        
         document.querySelector('#drop').addEventListener('click',()=>{
     document.querySelector('#staffList ').classList.toggle('showList')
     document.querySelector('.category').classList.toggle('borderState')
     
 })
+document.querySelector('#menu').addEventListener('click',()=>{
+    document.querySelector('ul ').classList.toggle('showList')
+    
+})
     </script>
+     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 </body>
 </html>

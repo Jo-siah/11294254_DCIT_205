@@ -74,7 +74,7 @@ box-icon{
     
 }
 .welcomeImg{
-    background-image: url('freshers-page_2018.jpg');
+    background-image: url('/MEDIA/freshers-page_2018.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

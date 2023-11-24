@@ -21,11 +21,11 @@ a{
 
 .mainpage{
     background: linear-gradient(rgba(0,0,0,0.9),
-     rgba(0,0,0,0.8) ), url('laptopset.jpg');
+     rgba(0,0,0,0.8) ), url('/MEDIA/laptopset.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 120vh;
+    height: 125vh;
     padding-left: 40px;
 
 }
@@ -359,9 +359,9 @@ text-align: center;
 
 }
 @media (width:900px) and (max-width:1300px){
-    .mainFoot{
-        height: 40vh;
-        background-color: green;
+    .mainpage{
+        height: 125vh;
+        padding-bottom: 10vh;
     }
     .accessLinks>li{
         padding: 3px;
