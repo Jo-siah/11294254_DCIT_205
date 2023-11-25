@@ -12,12 +12,6 @@ a{
     text-decoration: none;
     
 }
-/* p{
-    font-size: 1.8rem;
-} */
-/* li{
-    list-style: none;
-} */
 
 .mainpage{
     background: linear-gradient(rgba(0,0,0,0.9),
@@ -40,7 +34,7 @@ a{
     
 }
 .opportunity>h1{
-    color: #4a43d1;
+    color: #e6db5a;
     margin-top: 10px;
 }
 .opportunity>p{
@@ -57,6 +51,10 @@ a{
 }
 .L{
     width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .L>p{
     color: white;
@@ -65,7 +63,7 @@ a{
 }.L>li{
     text-align: left;
     padding-top: 3vh;
-    color: #0e304c;
+    color: #e6db5a;
     font-size: 2rem;
 }
 .L>li>a{
@@ -82,6 +80,8 @@ color:red;
     display: flex;
     flex-direction: column;
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 .innerR{
     display: flex;
@@ -89,15 +89,21 @@ color:red;
     width: 65%;
     gap: 3rem;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .innerR>input{
     width: 20vw;
     padding: 10px;
-    border-radius: 15px;
-    box-shadow: inset 0 0 10px rgba(38, 38, 38, 0.4);
+    border-radius: 5px;
     border: none;
     font-size: 1.3rem;
-    background-color: whitesmoke;
+    background-color: whites;
+}
+.innerR>input::placeholder{
+font-size: 1rem;
+color: silver;
 }
 .innerR>textarea{
     width: 30vw;
@@ -106,7 +112,7 @@ color:red;
     border-radius: 10px;
     color: white;
     font-size: 1.3rem;
-    display: flex;
+   
 }
 textarea::placeholder{
     color:rgb(220, 218, 218);
@@ -124,9 +130,10 @@ textarea::placeholder{
     padding-top: 5vh;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .form>h2{
-    color: #3933ad;
+    color: #e6db5a;
 }
 button{
     padding: 10px;
@@ -142,30 +149,28 @@ button{
     text-decoration: none;
     color: white;
 }
-
-.input {
+#input {
     width: 20vw;
     padding: 10px;
     border: none;
     background-color: #fff;
-    box-shadow: inset 0 0 10px rgba(38, 38, 38, 0.9);
+    /* box-shadow: inset 0 0 10px rgba(38, 38, 38, 0.9); */
     border-radius: 10px;
     transition: box-shadow 0.3s ease;
-    font-size: 1.5rem;
-}
-input::placeholder{
-    color: silver;
     font-size: 1.2rem;
 }
-.input:focus {
+#input::placeholder{
+    color: silver;
+    font-size: 1rem;
+}
+#input:focus {
     box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.2);
     outline: none;
 }
 .reason{
     height: 20vh;
     width: 70vw;
-    background-color:whitesmoke !important;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    background-color:white !important;
     border: 1px solid silver;
 }
 
@@ -275,7 +280,7 @@ text-align: center;
         font-size: 1.2rem;
     }
     .form{
-        /* height: 60vh; */
+        
         padding-left: 20px;
         justify-content: center;
         padding-bottom: 0px;
@@ -285,7 +290,7 @@ text-align: center;
         display: none;
     }
     .form>h2{
-        color: #8c1515;
+        color: ;
 
     }
     .input{
@@ -328,7 +333,6 @@ text-align: center;
        display: flex; 
         justify-content: center;
         font-size: 1.8rem;
-        /* padding-left: 30vw !important; */
         padding: 30px;
         width: 100%;
     }

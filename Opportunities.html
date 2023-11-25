@@ -23,9 +23,9 @@
 
                 <div class="form">
                     <h2>Apply for internship</h2>
-                    <input class="input" type="text" placeholder="Your StudentID">
-                    <input class="input" type="text" placeholder="webkat49@gmail.com"/>
-                    <button><a href="waiting.html">submit</a></button>
+                    <input id="input" type="text" placeholder="Your StudentID" required>
+                    <input id="input" type="text" placeholder="webkat49@gmail.com" required>
+                    <a href="waiting.html" id="submitBtn"><button disabled>Submit</button></a>
                 </div>
             </div>
             <hr>
@@ -34,11 +34,11 @@
                 <div class="innerR">
                     <h2>Get a scholarship  <a href="">know more....</a></h2>
                
-                <input type="text" placeholder="name">
-                <input type="text" placeholder="StudentID">
-                <input type="text" placeholder="Email">
+                <input type="text" placeholder="name" id="info" required >
+                <input type="text" placeholder="StudentID" id="info" required >
+                <input type="text" placeholder="Email" required>
                 <input type="text" class="reason" placeholder="why do you need this scholarship ?">
-                <button><a href="waiting.html">Apply</a></button>
+                <a href="waiting.html" id="ApplyBtn"><Button disabled>Apply</Button></a>
                 
                 </div>
 
@@ -66,6 +66,6 @@
             </div>
            
         </div>
-
+           
 </body>
 </html>
