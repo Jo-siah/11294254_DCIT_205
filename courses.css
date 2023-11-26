@@ -288,7 +288,7 @@ nav ul{
 nav ul li{
     margin: 0;
     padding: 0px 25px;
-    line-height: 10vh;
+    line-height: 8vh;
     display: block;
     border-bottom: 1px solid whitesmoke;
 }
@@ -308,8 +308,7 @@ box-icon{
     color: white;
 }
 .Cs-logo{
-    height: 50px;
-    width: 46%;
+    height: 80vhs;
 }
 
 p{
@@ -319,14 +318,6 @@ p{
         font-size: 1.3rem;
     }
 
-    /* .MBdev, .cCNa,.Programming,.Infosec{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        height: 50vh;
-        width: 40vw;
-        
-    } */
     .description>h2{
         font-size: 1.3rem;
 
